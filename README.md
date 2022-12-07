@@ -20,6 +20,7 @@ fstat 可以获取一个文件描述符指向的文件的信息
 
 ```
 如果fd所指为目录文件：
+
 read(fd,stuct dirent* dir,sizeof(dir))
 可遍历读取该目录下的文件，并存入dir中
 

@@ -64,3 +64,13 @@ read(fd,stuct dirent* dir,sizeof(dir))
 需要在trap中保存当前trapframe（这些寄存器表明了执行系统调用时计算机的状态）
 由于a0是保存返回值，为了不让前一个调用的返回值被覆盖，可直接返回a0的值
 ```
+
+```
+alarm lab流程:
+
+用户空间:    1.开始        3.alarm函数                   5.结束
+            
+内核空间:        2.系统调用          4.系统调用结束处理函数
+
+2时保存trapframe,alarm函数会调用4，4时用保存的trapframe替换当前的trapframe以回到用户空间。
+```

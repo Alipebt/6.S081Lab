@@ -73,4 +73,8 @@ alarm lab流程:
 内核空间:        2.系统调用          4.系统调用结束处理函数
 
 2时保存trapframe,alarm函数会调用4，4时用保存的trapframe替换当前的trapframe以回到用户空间。
+``` 
+
+```
+cow。。。
 ```

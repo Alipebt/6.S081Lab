@@ -74,7 +74,3 @@ alarm lab流程:
 
 2时保存trapframe,alarm函数会调用4，4时用保存的trapframe替换当前的trapframe以回到用户空间。
 ``` 
-
-```
-cow。。。
-```
